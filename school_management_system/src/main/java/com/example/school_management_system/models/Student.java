@@ -2,10 +2,7 @@ package com.example.school_management_system.models;
 
 import com.example.school_management_system.dto.StudentDto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Student {
@@ -16,6 +13,10 @@ public class Student {
     private String lastname;
     private Integer age;
     private String year;
+
+//    @ManyToOne
+//    private School school;
+
     public Long getId() {
         return id;
     }
@@ -56,7 +57,14 @@ public class Student {
         this.year = year;
     }
 
-
+//
+//    public School getSchool() {
+//        return school;
+//    }
+//
+//    public void setSchool(School school) {
+//        this.school = school;
+//    }
 
     public Student() {
     }

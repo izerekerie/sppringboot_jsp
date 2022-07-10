@@ -10,13 +10,16 @@
     <title>Document</title>
 </head>
 <body>
-<p>add new student</p>
+<div class="container p-6" >
+<p class="h3 text-primary text-bold text-center p-5 ">Add new student</p>
 <form action="/students/create" method="post">
-<input type="text" name="firstname" placeholder="Enter firstName"/>
-<input type="text" name="lastname" placeholder="Enter lastName"/>
-<input type="text" name="year" placeholder="Enter class year"/>
-<input type="number" name="age" placeholder="Enter age"/>
- <button class="btn btn-primary">save</button>
+
+<input class="form-control my-2 col-md-6 col " type="text" name="firstname" placeholder="Enter firstName"/>
+<input class="form-control my-2 col-md-6 col"  type="text" name="lastname" placeholder="Enter lastName"/>
+<input class="form-control my-2 col-md-6 col"  type="text" name="year" placeholder="Enter class year"/>
+<input class="form-control my-2 col-md-6 col"  type="number" name="age" placeholder="Enter age"/>
+ <button class="btn btn-primary my-2">save</button>
 </form>
+</div>
 </body>
 </html>
