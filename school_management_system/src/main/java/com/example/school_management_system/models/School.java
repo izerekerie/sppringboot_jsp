@@ -2,10 +2,8 @@ package com.example.school_management_system.models;
 
 import com.example.school_management_system.dto.SchoolDto;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class School {
@@ -14,6 +12,9 @@ public class School {
     private Long id;
     private String name;
     private String address;
+
+//    @OneToMany
+//    private List<Student> students;
 
     public School(Long id, String name, String address) {
         this.id = id;
@@ -26,11 +27,11 @@ public class School {
     }
 
 
-
-    public School(SchoolDto dto){
+    public School(SchoolDto dto) {
         this.name = dto.getName();
         this.address = dto.getAddress();
     }
+
     public void setId(Long id) {
         this.id = id;
     }

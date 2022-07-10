@@ -6,6 +6,8 @@ public class StudentDto {
     private Integer age;
     private String year;
 
+    private Long schoolId;
+
     public String getFirstname() {
         return firstname;
     }
@@ -36,5 +38,13 @@ public class StudentDto {
 
     public void setYear(String year) {
         this.year = year;
+    }
+
+    public Long getSchoolId() {
+        return schoolId;
+    }
+
+    public void setSchoolId(Long schoolId) {
+        this.schoolId = schoolId;
     }
 }
