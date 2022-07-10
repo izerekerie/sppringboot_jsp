@@ -65,6 +65,7 @@ public class StudentServices {
         updatedStudent.setAge(student.getAge());
 
 
+
      return  new ResponseEntity<>(studentRepository.save(updatedStudent),HttpStatus.OK);
  }
 

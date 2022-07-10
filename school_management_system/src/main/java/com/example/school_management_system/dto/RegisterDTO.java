@@ -1,20 +1,19 @@
-package com.example.school_sms_.dao;
+package com.example.school_management_system.dto;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.example.school_management_system.models.enums.ERole;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Setter
+
 @Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class User {
-    private  Long id;
+public class RegisterDTO {
     private String names;
     private String email;
-    @JsonIgnore
     private String password;
+    private ERole role;
 }

@@ -9,6 +9,16 @@
     <title>Document</title>
 </head>
 <body>
-<p>hello</p>
+
+
+    <div class="container d-flex justify-content-center">
+        <div  class=" ">
+            <div class="">WELCOME</div>
+            <div class="btn btn-primary" onclick="window.location.href='/login'">Login</div>
+        </div>
+
+
+
+    </div>
 </body>
 </html>

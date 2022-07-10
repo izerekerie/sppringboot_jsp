@@ -11,28 +11,7 @@
     <title>Document</title>
 </head>
 <body>
-
-    <div class="navbar navbar-expand-lg text-light navbar-dark bg-primary">
-      <div class="container">
-          <a class="navbar-brand">
-              <p>SMS</p>
-          </a>
-          <div class="collapse navbar-collapse">
-              <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                      <a href="#" class="nav-link active link-light">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#" class="nav-link active link-light">Schools</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="#" class="nav-link active link-light">Students</a>
-                  </li>
-
-              </ul>
-          </div>
-      </div>
-    </div>
+<jsp:include page="../components/Navbar.jsp"></jsp:include>
     <div class="container">
         <div class="container">
             <button class="btn btn-primary" onclick="window.location.href='/schools/add-page'">Add student</button>

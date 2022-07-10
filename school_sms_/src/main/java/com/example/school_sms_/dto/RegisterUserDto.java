@@ -12,11 +12,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RegisterUserDto {
-
-
         private String names;
         private String email;
-        @JsonIgnore
         private String password;
         private ERole role;
     }

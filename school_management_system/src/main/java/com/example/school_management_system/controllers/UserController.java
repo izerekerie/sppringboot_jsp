@@ -1,5 +1,6 @@
 package com.example.school_management_system.controllers;
 import com.example.school_management_system.dto.LoginDTO;
+import com.example.school_management_system.dto.RegisterDTO;
 import com.example.school_management_system.models.User;
 import com.example.school_management_system.models.enums.ERole;
 import com.example.school_management_system.security.JwtTokenProvider;
@@ -38,7 +39,7 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<?> register(@RequestBody User registerDTO) {
+    public ResponseEntity<?> register(@RequestBody RegisterDTO registerDTO) {
         User user = new ModelMapper().map(registerDTO, User.class);
         user.setPassword(Utility.encode(registerDTO.getPassword()));
         user.setRole(ERole.USER);
