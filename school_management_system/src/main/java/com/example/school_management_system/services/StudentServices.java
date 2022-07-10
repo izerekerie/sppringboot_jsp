@@ -17,12 +17,21 @@ import java.util.Optional;
 public class StudentServices {
     @Autowired
     StudentRepository studentRepository;
+
+    @Autowired
+    SchoolServices schoolServices;
+
    public List<Student> getAllStudents(){
 
        return  studentRepository.findAll();
    }
    public Student insertStudent(StudentDto student){
+//       School school = schoolServices.findById(student.getSchoolId());
+
        Student newStudent=new Student(student);
+
+//       newStudent.setSchool(school);
+
        return studentRepository.save(newStudent);
 
    }

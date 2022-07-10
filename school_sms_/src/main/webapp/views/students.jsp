@@ -11,17 +11,18 @@
     <title>Document</title>
 </head>
 <body>
-<div class="container">
+<div class="container ">
+
     <div class="container">
-        <button class="btn btn-primary" onclick="window.location.href='/students/add-page'">Add student</button>
+        <button class="btn btn-primary my-2" onclick="window.location.href='/students/add-page'">Add student</button>
     </div>
     <c:forEach items="${students}" var="student">
-    <div class="container p-4 m-4 bg-primary  text-light">
+    <div class="container p-4 m-4 bg-dark  text-light">
         <p>name:${student.firstname} ${student.lastname}</p>
         <p>age: ${student.age} years old</p>
         <p> class: ${student.year}</p>
         <input type="button" class="btn btn-danger" value="delete" onclick="window.location.href='/students/delete?id=${student.id}'"/>
-        <input type="button" class="btn btn-primary" value="edit" onclick="window.location.href='/students/edit-page?id=${student.id}'" />
+        <input type="button" class="btn btn-warning" value="edit" onclick="window.location.href='/students/edit-page?id=${student.id}'" />
     </div>
     </c:forEach>
 </div>
