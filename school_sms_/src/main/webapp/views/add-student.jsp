@@ -11,15 +11,18 @@
 </head>
 <body>
 <div class="container p-6" >
-<p class="h3 text-primary text-bold text-center p-5 ">Add new student</p>
-<form action="/students/create" method="post">
 
-<input class="form-control my-2 col-md-6 col " type="text" name="firstname" placeholder="Enter firstName"/>
-<input class="form-control my-2 col-md-6 col"  type="text" name="lastname" placeholder="Enter lastName"/>
-<input class="form-control my-2 col-md-6 col"  type="text" name="year" placeholder="Enter class year"/>
-<input class="form-control my-2 col-md-6 col"  type="number" name="age" placeholder="Enter age"/>
+    <div class="container d-flex justify-content-center">
+
+<form action="/students/create" method="post">
+    <p class="h4 font-bold text-center text-primary">Add student</p>
+<input class="form-control my-2  " type="text" name="firstname" placeholder="Enter firstName"/>
+<input class="form-control my-2 "  type="text" name="lastname" placeholder="Enter lastName"/>
+<input class="form-control my-2 "  type="text" name="year" placeholder="Enter class year"/>
+<input class="form-control my-2 "  type="number" name="age" placeholder="Enter age"/>
  <button class="btn btn-primary my-2">save</button>
 </form>
+    </div>
 </div>
 </body>
 </html>

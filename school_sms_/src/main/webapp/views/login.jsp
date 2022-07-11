@@ -9,17 +9,20 @@
     <title>Document</title>
 </head>
 <body>
-<div class="row align-items-center justify-content-center">
-<form class="container justify-content-center m-4" action="/login" method="post">
-    <div class="col-md-6 col-12">
+
+<div class="container d-flex justify-content-center">
+
+<form class="col-md-6 container m-4" action="/login" method="post">
+    <p class="h4 font-bold text-center">Login</p>
+    <div class=" ">
         <input class="form-control  my-2" type="text" name="email" placeholder="Enter email ">
     </div>
-  <div class="col-md-6 col-12">
+  <div class="">
       <input  class="form-control col-md-6 my-2" type="password" name="password" placeholder="Enter password " >
   </div>
 
 
-    <button class="btn  btn-primary col-md-6 my-2 col-12" type="submit">save</button>
+    <button class="btn  btn-primary col-12 my-2 " type="submit">save</button>
     <p class="text-center">Have no account yet ? Login <span onclick="window.location.href='/register'" class="text-primary">here</span></p>
 </form>
 
